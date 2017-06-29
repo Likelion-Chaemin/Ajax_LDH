@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Youth';
+  font-style: normal;
+  font-weight: 200;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kywa/Youth/Youth.woff') format('woff');
+}
+
+
+.container-fluid{
+    margin: 10px auto;
+    padding: 3px;
+}
+
+.header, h1{
+    font-family: 'LotteMartHappy', sans-serif;
+    text-align: center;
+    margin: 60px auto;
+    
+}
+
+.titleText, .contentText, .timeText{
+     font-family: 'Youth', sans-serif;
+     text-align: justify;
+     color: rgb(0, 125, 125);
+     margin: 10px;
+     font-size: 17px;
+}
+
+.titleContent, .contentContent, .timeContent{
+     font-family: 'Youth', sans-serif;
+     text-align: justify
+}

@@ -1,0 +1,31 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheet/updateView.css">
+</head>
+
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 header col-md-offset-2">
+      <h1>수정중...</h1>
+    </div>
+  </div>
+
+  <div class="row form">
+    <form action="/siljae_update/<%= @one_post.id %>" method="POST">
+      <div class="form-group col-md-5 col-md-offset-2">
+        <label for="exampleInputEmail1">제목 수정</label>
+        <input type="text" name="title" value="<%=@one_post.title %>" class="form-control" id="exampleInputEmail1">
+      </div>
+      
+      <div class="form-group col-md-5 col-md-offset-2">
+        <label for="exampleInputText">내용 수정</label>
+        <textarea name="content" class="form-control" rows="10" id="exampleInputText"> <%=@one_post.content %> </textarea>
+      </div>
+    
+      <div class="col-md-1 col-md-offset-6">
+        <button type="submit" class="btn btn-default"><img src="\app\mailers\questionmark.png" alt="questionmark" class="qmark">수정하기</button>
+      </div>
+  </form>
+</div>
+</body>

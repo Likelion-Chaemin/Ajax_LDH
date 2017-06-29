@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LotteMartHappy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff');
+}
+
+
+
+
+.container-fluid{
+    margin: 10px auto;
+    padding: 3px;
+}
+
+
+.form-group{
+    margin: 50px auto;
+    text-align: center;
+    width: 500px;
+    height: auto;
+}
+
+.header, .subheader{
+    font-family: 'LotteMartHappy', sans-serif;
+    text-align: center;
+}
+
+.header{
+    margin-top: 60px;
+}
+
+.qmark{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+button{
+    width: 100px;
+    margin: 30px auto;
+    float: right;
+}
+
+label{
+    font-size: 25px;
+    font-family: 'LotteMartHappy', sans-serif;
+}

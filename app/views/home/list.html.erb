@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheet/list.css">
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 header col-md-offset-2">
+        <h1>여기는 게시판 지난 글 입니다.</h1>
+        <% @every_post.each do |p| %>
+      </div>
+    </div>
+        
+
+
+    <div class="row contents">
+      <div class="title col-md-5 col-md-offset-2">
+        <span class="titleText">제목 : </span><span class="titleContent"><%= p.title %></span>
+      </div>
+      <br>
+      <div class="content col-md-5 col-md-offset-2">
+        <span class="contentText">내용 : </span><span class="contentContent"><%= p.content %></span>
+      </div>
+      <div class="time col-md-5 col-md-offset-2">
+        <span class="timeText">작성날짜 : </span><span class="timeContent"><%= p.created_at.to_date %></span>
+      </div>
+      <!-- 시간을 기록할 수 있는 방법 -->
+      <div class="col-md-1 col-md-offset-5 update">
+        <a href="/update_view/<%= p.id =%>">[수정]</a>
+      </div>
+      <div class="col-md-1 delete">
+        <a href="/destroy/<%= p.id =%>">[삭제]</a>
+      </div>
+      <hr class="col-md-5 col-md-offset-2">
+    </div>
+
+<% end %>
+    <div class="row">
+      <div class="col-md-5 header col-md-offset-2">
+        <h1 class="link"><a href="/">게시판 글쓰러 가기</a></h1>
+      </div>
+    </div>
+  </div>
+</body>

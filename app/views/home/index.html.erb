@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheet/main.css">
+</head>
+
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5 header col-md-offset-2">
+      <h1> 익명질문 게시판 </h1>
+    </div>
+    <div class="col-md-5 subheader col-md-offset-2">
+      <h3> 누구에게 뭐든 물어보세요! </h3>
+    </div>
+  </div>
+
+
+  <div class="row form">
+    <form action="/write" method="POST">
+      <div class="form-group col-md-5 col-md-offset-2">
+        <label for="exampleInputEmail1">제목</label>
+        <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="OO에게...">
+      </div>
+
+      <div class="form-group col-md-5 col-md-offset-2">
+        <label for="exampleInputText">궁금한점</label>
+        <textarea name="content" class="form-control" rows="10" id="exampleInputText" placeholder="궁금한 것 적기"></textarea>
+      </div>
+      
+      <div class="col-md-1 col-md-offset-6">
+        <button type="submit" class="button"><img src="questionmark.png" alt="questionmark" class="qmark">물어보기</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
